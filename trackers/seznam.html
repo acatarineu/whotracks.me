@@ -1,0 +1,619 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Tracker | Seznam</title>
+    <meta name="description" content="Tracker profile of Seznam. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+
+    
+    <!-- OG params for sharable content -->
+    <meta property="og:title" content="Tracker | Seznam">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whotracks.me/trackers/seznam.html">
+    <meta property="og:description" content="Tracker profile of Seznam. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="../static/img/favicon-2.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+
+    <!--add this block to templates that need extra styling-->
+    
+    <link rel="stylesheet" href="../static/css/trackers/profile.css">
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="../static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = ".."
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">
+                        <img class="logo" alt="Who Tracks Me" src="../static/img/logo-white.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+
+                    <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li  class="active" >
+                            <a class="nav-button" href="../trackers.html">TRACKERS</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../websites.html">WEBSITES</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../blog.html">BLOG</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../explorer.html">EXPLORER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>Seznam</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var operates_under_selector = '#operates-under p',
+        $operates_under_list = $(operates_under_selector),
+        operates_list_size = $operates_under_list.length,
+        items_to_show = 2,
+        $expand = $('.operates-expand'),
+        $collapse = $('.operates-collapse');
+    $(operates_under_selector + ':lt(' +items_to_show+')').show();
+    $expand.click(function(e) {
+        items_to_show = operates_list_size;
+        $(operates_under_selector + ':lt('+items_to_show+')').show();
+        if(items_to_show === operates_list_size) {
+            $collapse.removeClass('hidden');
+            $expand.addClass('hidden');
+        }
+    });
+
+    $collapse.click(function() {
+        $(this).addClass('hidden');
+        $expand.removeClass('hidden');
+        $operates_under_list.not(':lt(2)').hide();
+    });
+
+});
+</script>
+<div id="tracker-page" class="overview-page">
+    <div id="overview-header">
+        <div class="container">
+            <div class="row overview-info inverse">
+                <div class="col-md-6 col-sm-6">
+  <h1>Seznam</h1>
+  
+    <p class="header">Owned by Seznam</p>
+  
+  
+</div>
+
+<div class="col-md-6 col-sm-6">
+  <div class="overview-info-right">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <p class="header">TRACKER RANK</p>
+        <p class="tracker-rank">
+          <span class="emphasis">380</span>
+          /1106
+        </p>
+        <p class="description">Relatively prevalent</p>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        
+          <p class="header">OPERATES UNDER</p>
+          <div id="operates-under">
+          
+            <p>
+              <a class="profile-label"
+                 target="_blank"
+                 rel="noreferrer"
+                 href="//imedia.cz"> imedia.cz
+              </a>
+            </p>
+          
+            <p>
+              <a class="profile-label"
+                 target="_blank"
+                 rel="noreferrer"
+                 href="//szn.cz"> szn.cz
+              </a>
+            </p>
+          
+
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="overview-header-box">
+  <div class="row">
+
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6 col-sm-6">
+        <h3>TRACKER REACH</h3>
+        <div class="trend">
+          <img class="trackers-icon" src="../static/img/page.svg">
+          <span class="percentage">
+            0.2%
+            <span class="graph"><div id="4162f29d-bf3b-4d6a-aa05-dd9c3d203f9d" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("4162f29d-bf3b-4d6a-aa05-dd9c3d203f9d", [{"hoverinfo": "text", "line": {"color": "#A069AB", "dash": "solid", "width": 3}, "marker": {"size": 10}, "mode": "lines", "opacity": 1, "text": ["0.14% on Feb 18", "0.14% on Mar 18", "0.13% on Apr 18", "0.21% on May 18", "0.21% on Jun 18", "0.18% on Jul 18", "0.14% on Aug 18", "0.15% on Sep 18", "0.15% on Oct 18", "0.15% on Nov 18"], "x": ["2018-02-01", "2018-03-01", "2018-04-01", "2018-05-01", "2018-06-01", "2018-07-01", "2018-08-01", "2018-09-01", "2018-10-01", "2018-11-01"], "y": [0.14466266371583328, 0.13628541966242705, 0.12951100042116576, 0.21268750883525286, 0.21276285938649775, 0.1809184858454021, 0.13683386711384257, 0.147181746577195, 0.14926377383057265, 0.15116258445900596], "type": "scatter", "uid": "b29162a2-fa27-11e8-8ffe-42010a140451"}, {"hoverinfo": "text", "line": {"color": "#A069AB", "dash": "solid", "width": 3}, "marker": {"size": 10}, "mode": "markers", "opacity": 1, "text": ["0.15% on Nov 18"], "x": ["2018-11-01"], "y": [0.15116258445900596], "type": "scatter", "uid": "b29165c2-fa27-11e8-8ffe-42010a140451"}], {"height": 100, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "rgba(0,0, 0, 0)", "font": {"color": "#BFCBD6", "family": "monospace", "size": 13}}, "margin": {"b": 40, "l": 10, "pad": 5, "r": 10, "t": 30}, "showlegend": false, "width": 153, "xaxis": {"autorange": true, "hoverformat": "%b %y", "showgrid": false, "showline": false, "showticklabels": false, "ticks": "", "zeroline": false}, "yaxis": {"range": [0.11655990037904919, 0.22340100235582264], "showgrid": false, "showline": false, "showticklabels": false, "ticks": "", "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+
+          <p class="description">of web traffic is tracked by Seznam</p>
+      </div>
+      <div class="trend">
+          <img class="trackers-icon" src="../static/img/domain.svg">
+          <span class="percentage">
+            0.3%
+            <span class="graph"><div id="2c708b89-98a0-4546-81f2-72ceb70fcd80" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("2c708b89-98a0-4546-81f2-72ceb70fcd80", [{"hoverinfo": "text", "line": {"color": "#A069AB", "dash": "solid", "width": 3}, "marker": {"size": 10}, "mode": "lines", "opacity": 1, "text": ["0.33% on Feb 18", "0.32% on Mar 18", "0.30% on Apr 18", "0.35% on May 18", "0.42% on Jun 18", "0.40% on Jul 18", "0.33% on Aug 18", "0.33% on Sep 18", "0.34% on Oct 18", "0.35% on Nov 18"], "x": ["2018-02-01", "2018-03-01", "2018-04-01", "2018-05-01", "2018-06-01", "2018-07-01", "2018-08-01", "2018-09-01", "2018-10-01", "2018-11-01"], "y": [0.3291199502555234, 0.31882278780498696, 0.2974391552666313, 0.35313800667242745, 0.4192673427296154, 0.4017938062662379, 0.32813631558356154, 0.32815021829071467, 0.3355622668008916, 0.34895748812429556], "type": "scatter", "uid": "b2ae25b8-fa27-11e8-8ffe-42010a140451"}, {"hoverinfo": "text", "line": {"color": "#A069AB", "dash": "solid", "width": 3}, "marker": {"size": 10}, "mode": "markers", "opacity": 1, "text": ["0.35% on Nov 18"], "x": ["2018-11-01"], "y": [0.34895748812429556], "type": "scatter", "uid": "b2ae28f6-fa27-11e8-8ffe-42010a140451"}], {"height": 100, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "rgba(0,0, 0, 0)", "font": {"color": "#BFCBD6", "family": "monospace", "size": 13}}, "margin": {"b": 40, "l": 10, "pad": 5, "r": 10, "t": 30}, "showlegend": false, "width": 153, "xaxis": {"autorange": true, "hoverformat": "%b %y", "showgrid": false, "showline": false, "showticklabels": false, "ticks": "", "zeroline": false}, "yaxis": {"range": [0.26769523973996817, 0.4402307098660962], "showgrid": false, "showline": false, "showticklabels": false, "ticks": "", "zeroline": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+          <p class="description">of sites use the Seznam tracker</p>
+      </div>
+      <p class="subtitle">
+        
+          Data from February 2018 to November 2018.
+        
+      </p>
+    </div>
+
+
+    <!-- Right COLUMN -->
+    <div class="col-md-6 col-sm-6">
+          <h3>SEEN ON THESE TYPES OF WEBSITES</h3>
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">42% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="52.5" aria-valuemin="0" aria-valuemax="100" style="width: 52.5%">
+                News and Portals
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">28% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="35.0" aria-valuemin="0" aria-valuemax="100" style="width: 35.0%">
+                Business
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">19% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="23.75" aria-valuemin="0" aria-valuemax="100" style="width: 23.75%">
+                Entertainment
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">12% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100" style="width: 15.0%">
+                E-Commerce
+                </div>
+              </div>
+            </div>
+            
+          
+
+          <h3>TRACKING TYPE</h3>
+          <div class="row tracking-methods">
+            
+              <div  class="col-md-4" >
+                <img src="../static/img/cookies.svg">
+<p class="tracking-method">
+  <span class="highlight">COOKIES</span> are files placed by the website, stored in the browser
+  that is used to identify you to the website. <div>
+    <a class="learn-more" href="../blog/cookies.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+
+            
+              <div  class="col-md-4" >
+                <img  src="../static/img/fingerprinting.svg">
+<p class="tracking-method">
+  <span class="highlight">FINGERPRINTING</span> is a unique digital signature derived from the properties of your device.
+  <div>
+    <a class="learn-more" href="../blog/fingerprinting.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+            
+          </div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="similar-trackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row tracker-category">
+                        <div class="col-md-11">
+                        <h4>TRACKER CATEGORY</h4>
+                        
+                            <span class="cat-item">
+                                <i class="fa fa-circle" style="color: #84D7F0" aria-hidden="true"></i>
+                                Site Analytics
+                            </span>
+                            <p class="tracker-desc">Collects and analyzes data related to site usage and performance.</p>
+                        
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/tracker_categories.html">Learn about our tracker categories</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/what_is_a_tracker.html">What is a tracker?</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6  col-sm-6 col-xs-12">
+                    <h4>SIMILAR TRACKERS</h4>
+                    <ul>
+                        
+                            <li>
+                                <a href="../trackers/google_analytics.html" class="entity-name">
+                                Google Analytics
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/new_relic.html" class="entity-name">
+                                New Relic
+                                </a>
+                                
+                                    <span>
+                                        New Relic
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/infonline.html" class="entity-name">
+                                INFOnline
+                                </a>
+                                
+                                    <span>
+                                        INFOnline
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/hotjar.html" class="entity-name">
+                                Hotjar
+                                </a>
+                                
+                                    <span>
+                                        Hotjar
+                                    </span>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="tag-cloud">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Presence on top sites</h2>
+                
+                    <script src="../static/js/d3.min.js"></script>
+<script src="../static/js/d3.layout.cloud.js"></script>
+
+<script>
+        function sanitiseCategory(cat) {
+            return cat.replace(/\s/g, '_').toLowerCase();
+        }
+
+        function drawTagCloud(cat, siteList) {
+            var container = document.getElementById('tag_cloud_container');
+            var width = Math.max(container.offsetWidth, 300);
+            var height = Math.max(container.offsetHeight - 5, 400);
+            var containerSvg = document.getElementById('tag_cloud');
+            containerSvg.setAttribute('width', width);
+            containerSvg.setAttribute('height', height);
+
+            var sites = JSON.parse(siteList);
+            var minSize = 20;
+            var maxSize = 100;
+            var scaleFactor = (maxSize - minSize) / 0.3;
+
+            var layout = d3.layout.cloud()
+                .size([width, height])
+                .words(sites.map(function (d) {
+                    return {
+                        text: d.site.replace('www.', ''),
+                        size: Math.min(maxSize, minSize + d.frequency * scaleFactor),
+                        rotate: 0,
+                        opacity: 0.5 + (d.site_freq || 0. * 0.7),
+                        colour: d.site_cat,
+                        href: d.url,
+                        category: d.category,
+                    };
+                }))
+                .padding(3)
+                .rotate(function (d) { return 0 })
+                .font("Impact")
+                .fontSize(function (d) { return d.size; })
+                .on("end", draw);
+
+            layout.start();
+
+            function draw(words) {
+                d3.select('#tag_cloud')
+                    .append("g")
+                    .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function (d) { return d.size + "px"; })
+                    .style("font-family", "Helvetica")
+                    .style("fill", function (d) { return d.colour })
+                    .attr("class", function (d) { return "category-" + sanitiseCategory(d.category) })
+                    .attr("opacity", function (d) { return d.opacity })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .insert('a')
+                    .attr("href", function (d) { return d.href })
+                    .text(function (d) { return d.text; });
+            }
+        }
+
+        var activeCategories = [];
+
+        function toggleTagCloudCategory(cat) {
+            if (cat === "all") {
+                // unselect buttons
+                activeCategories.forEach(function(otherCat) {
+                    document.getElementById('button-' + otherCat).classList.remove('active');
+                });
+                document.getElementById('button-all').classList.add('active');
+                // make everything visible
+                d3.selectAll("#tag_cloud text").style("visibility", "visible");
+                activeCategories = [];
+            } else {
+                document.getElementById('button-all').classList.remove('active');
+                document.getElementById('button-' + cat).classList.add('active');
+
+                if (activeCategories.length === 0) {
+                    // hide everything
+                    d3.selectAll("#tag_cloud text").style("visibility", "hidden");
+                }
+                // make just elements from specified categories visible
+                d3.selectAll("#tag_cloud text.category-" + sanitiseCategory(cat)).style("visibility", "visible");
+                activeCategories.push(cat);
+            }
+        }
+    </script>
+
+
+<ul class="nav nav-tabs">
+    <li class="active" id="button-all">
+        <a href="#all" onclick="toggleTagCloudCategory('all')">Show all</a>
+    </li>
+    
+        
+    
+        
+            <li id="button-Business">
+                <a href="#Business" onclick="toggleTagCloudCategory('Business')">Business</a>
+            </li>
+        
+    
+        
+            <li id="button-E-Commerce">
+                <a href="#E-Commerce" onclick="toggleTagCloudCategory('E-Commerce')">E-commerce</a>
+            </li>
+        
+    
+        
+            <li id="button-Entertainment">
+                <a href="#Entertainment" onclick="toggleTagCloudCategory('Entertainment')">Entertainment</a>
+            </li>
+        
+    
+        
+            <li id="button-News and Portals">
+                <a href="#News and Portals" onclick="toggleTagCloudCategory('News and Portals')">News and portals</a>
+            </li>
+        
+    
+</ul>
+
+<div class="tab-content">
+    <div id="tag_cloud_container" class="tab-pane fade in active">
+        <svg id="tag_cloud" height=400></svg>
+        <script>drawTagCloud('all', '[{"category": "News and Portals", "frequency": 0.1560690050654688, "site": "seznam.cz", "site_cat": "#000", "site_freq": 0.9961669072940602, "url": "../websites/seznam.cz.html"}, {"category": "News and Portals", "frequency": 0.07343814712160311, "site": "idnes.cz", "site_cat": "#000", "site_freq": 0.5578640400764744, "url": "../websites/idnes.cz.html"}, {"category": "News and Portals", "frequency": 0.052838574022746825, "site": "novinky.cz", "site_cat": "#000", "site_freq": 0.8689649752442826, "url": "../websites/novinky.cz.html"}, {"category": "E-Commerce", "frequency": 0.03286342349230622, "site": "alza.cz", "site_cat": "#71C671", "site_freq": 0.6197170406416148, "url": "../websites/alza.cz.html"}, {"category": "Entertainment", "frequency": 0.022883812800662654, "site": "g2a.com", "site_cat": "#B8B8B8", "site_freq": 0.4614692749991969, "url": "../websites/g2a.com.html"}, {"category": "Entertainment", "frequency": 0.018036573321864348, "site": "super.cz", "site_cat": "#B8B8B8", "site_freq": 0.9981488011283498, "url": "../websites/super.cz.html"}, {"category": "E-Commerce", "frequency": 0.017945777183089616, "site": "heureka.cz", "site_cat": "#71C671", "site_freq": 0.42343832218296623, "url": "../websites/heureka.cz.html"}, {"category": "", "frequency": 0.011093058077670522, "site": "sport.cz", "site_cat": "#000", "site_freq": 0.9940051384527548, "url": null}, {"category": "", "frequency": 0.010678900251680523, "site": "seznamzpravy.cz", "site_cat": "#000", "site_freq": 0.9998508575689784, "url": null}, {"category": "", "frequency": 0.01064385612794291, "site": "lidl-shop.cz", "site_cat": "#000", "site_freq": 0.7470930232558141, "url": null}, {"category": "", "frequency": 0.010508458377138487, "site": "szn.cz", "site_cat": "#000", "site_freq": 0.9948725682400844, "url": null}, {"category": "Business", "frequency": 0.00778776004332728, "site": "ikea.com", "site_cat": "blue", "site_freq": 0.010337026387009472, "url": "../websites/ikea.com.html"}, {"category": "", "frequency": 0.007265284016693746, "site": "mall.cz", "site_cat": "#000", "site_freq": 0.4994524748138414, "url": null}, {"category": "", "frequency": 0.007158558730765555, "site": "sauto.cz", "site_cat": "#000", "site_freq": 1.0, "url": null}, {"category": "", "frequency": 0.0071474083277581315, "site": "lidovky.cz", "site_cat": "#000", "site_freq": 0.5752564102564103, "url": null}, {"category": "", "frequency": 0.006884577399726019, "site": "tipsport.cz", "site_cat": "#000", "site_freq": 0.6815959627818956, "url": null}, {"category": "", "frequency": 0.006755551307782982, "site": "cd.cz", "site_cat": "#000", "site_freq": 0.9000424448217318, "url": null}, {"category": "", "frequency": 0.006218739048711332, "site": "email.cz", "site_cat": "#000", "site_freq": 0.9951567677797604, "url": null}, {"category": "", "frequency": 0.006213960304565293, "site": "stream.cz", "site_cat": "#000", "site_freq": 0.9951530612244898, "url": null}, {"category": "", "frequency": 0.00615342954538214, "site": "mapy.cz", "site_cat": "#000", "site_freq": 0.9989656064132404, "url": null}, {"category": "", "frequency": 0.005063875880085379, "site": "blesk.cz", "site_cat": "#000", "site_freq": 0.360389978460492, "url": null}, {"category": "", "frequency": 0.004987415973748766, "site": "sbazar.cz", "site_cat": "#000", "site_freq": 0.9990427568602424, "url": null}, {"category": "", "frequency": 0.004601930612635, "site": "slevomat.cz", "site_cat": "#000", "site_freq": 0.751170046801872, "url": null}, {"category": "", "frequency": 0.004476090350122654, "site": "jobs.cz", "site_cat": "#000", "site_freq": 0.5578717490569783, "url": null}, {"category": "", "frequency": 0.004116091624454427, "site": "g-star.com", "site_cat": "#000", "site_freq": 0.5227594578191381, "url": null}, {"category": "", "frequency": 0.003959985982350505, "site": "fastshare.cz", "site_cat": "#000", "site_freq": 0.958735055919784, "url": null}, {"category": "", "frequency": 0.003729013348625315, "site": "nova.cz", "site_cat": "#000", "site_freq": 0.6417214912280702, "url": null}, {"category": "", "frequency": 0.003700340883749084, "site": "sreality.cz", "site_cat": "#000", "site_freq": 0.9961406518010292, "url": null}, {"category": "", "frequency": 0.003494854885469432, "site": "aukro.cz", "site_cat": "#000", "site_freq": 0.6017553483269337, "url": null}, {"category": "", "frequency": 0.0033785721112491642, "site": "autoforum.cz", "site_cat": "#000", "site_freq": 0.7937874251497006, "url": null}, {"category": "", "frequency": 0.003244767275160088, "site": "zbozi.cz", "site_cat": "#000", "site_freq": 0.9990191270230504, "url": null}, {"category": "", "frequency": 0.0031491923922393195, "site": "sfgame.net", "site_cat": "#000", "site_freq": 0.9477468839884948, "url": null}, {"category": "News and Portals", "frequency": 0.003082289974194781, "site": "aktualne.cz", "site_cat": "#000", "site_freq": 0.1397011046133853, "url": "../websites/aktualne.cz.html"}, {"category": "", "frequency": 0.003075918315333397, "site": "diit.cz", "site_cat": "#000", "site_freq": 0.9155998103366524, "url": null}, {"category": "", "frequency": 0.0029978654942814363, "site": "prozeny.cz", "site_cat": "#000", "site_freq": 1.0, "url": null}, {"category": "", "frequency": 0.002819459046162669, "site": "iprima.cz", "site_cat": "#000", "site_freq": 0.4245622451427201, "url": null}, {"category": "", "frequency": 0.0027891936665710923, "site": "cnews.cz", "site_cat": "#000", "site_freq": 0.7422636710470538, "url": null}, {"category": "", "frequency": 0.002787600751855745, "site": "ihned.cz", "site_cat": "#000", "site_freq": 0.5496231155778895, "url": null}, {"category": "", "frequency": 0.0027732645194176305, "site": "echo24.cz", "site_cat": "#000", "site_freq": 0.9666851749028318, "url": null}, {"category": "", "frequency": 0.002747777883972092, "site": "titulky.com", "site_cat": "#000", "site_freq": 0.4991319444444444, "url": null}, {"category": "", "frequency": 0.0026999904425117076, "site": "beate-uhse.com", "site_cat": "#000", "site_freq": 0.7597489914836396, "url": null}, {"category": "", "frequency": 0.002687247124788939, "site": "datart.cz", "site_cat": "#000", "site_freq": 0.902621722846442, "url": null}, {"category": "", "frequency": 0.002647424256905285, "site": "zive.cz", "site_cat": "#000", "site_freq": 0.1459302836069892, "url": null}, {"category": "", "frequency": 0.002621937621459747, "site": "kupi.cz", "site_cat": "#000", "site_freq": 0.99636803874092, "url": null}, {"category": "", "frequency": 0.0026091943037369783, "site": "flyuia.com", "site_cat": "#000", "site_freq": 0.6650426309378806, "url": null}, {"category": "", "frequency": 0.0025853005830067857, "site": "e15.cz", "site_cat": "#000", "site_freq": 0.38642857142857145, "url": null}, {"category": "", "frequency": 0.002574150179999363, "site": "hellspy.cz", "site_cat": "#000", "site_freq": 0.5732529265697056, "url": null}, {"category": "", "frequency": 0.0025438848004077862, "site": "eurozpravy.cz", "site_cat": "#000", "site_freq": 0.9162363740676994, "url": null}, {"category": "", "frequency": 0.002317690910828634, "site": "regiojet.cz", "site_cat": "#000", "site_freq": 0.6186224489795918, "url": null}, {"category": "", "frequency": 0.0023001688489598265, "site": "forum24.cz", "site_cat": "#000", "site_freq": 0.8714544357272178, "url": null}, {"category": "", "frequency": 0.002266717639937558, "site": "mimibazar.cz", "site_cat": "#000", "site_freq": 0.7186868686868687, "url": null}, {"category": "", "frequency": 0.002260345981076173, "site": "lide.cz", "site_cat": "#000", "site_freq": 1.0, "url": null}, {"category": "", "frequency": 0.0022523814074994425, "site": "damejidlo.cz", "site_cat": "#000", "site_freq": 0.5943673812526271, "url": null}, {"category": "", "frequency": 0.0021695498423014432, "site": "notino.cz", "site_cat": "#000", "site_freq": 0.6931297709923664, "url": null}, {"category": "", "frequency": 0.0021695498423014432, "site": "edna.cz", "site_cat": "#000", "site_freq": 0.3733552631578948, "url": null}, {"category": "", "frequency": 0.0021631781834400587, "site": "t-mobile.cz", "site_cat": "#000", "site_freq": 0.7181385510312004, "url": null}, {"category": "", "frequency": 0.0020150371149128678, "site": "officeshoes.cz", "site_cat": "#000", "site_freq": 0.9976340694006308, "url": null}, {"category": "", "frequency": 0.0020070725413361373, "site": "sfgame.de", "site_cat": "#000", "site_freq": 0.8904593639575972, "url": null}, {"category": "", "frequency": 0.001994329223613368, "site": "prace.cz", "site_cat": "#000", "site_freq": 0.6361788617886179, "url": null}, {"category": "", "frequency": 0.0019465417821529836, "site": "kinobox.cz", "site_cat": "#000", "site_freq": 0.8867924528301887, "url": null}, {"category": "", "frequency": 0.001905125999553984, "site": "garaz.cz", "site_cat": "#000", "site_freq": 1.0, "url": null}, {"category": "", "frequency": 0.0018764535346777532, "site": "ls-novinky.cz", "site_cat": "#000", "site_freq": 0.9949324324324323, "url": null}, {"category": "", "frequency": 0.0018143298607792536, "site": "knihydobrovsky.cz", "site_cat": "#000", "site_freq": 0.7092154420921544, "url": null}, {"category": "", "frequency": 0.0017856573959030234, "site": "aohostels.com", "site_cat": "#000", "site_freq": 0.7232258064516129, "url": null}, {"category": "", "frequency": 0.0017840644811876773, "site": "lidl.cz", "site_cat": "#000", "site_freq": 0.6930693069306929, "url": null}, {"category": "", "frequency": 0.001699640001274332, "site": "sklik.cz", "site_cat": "#000", "site_freq": 0.9990636704119852, "url": null}, {"category": "", "frequency": 0.0016980470865589855, "site": "sportisimo.cz", "site_cat": "#000", "site_freq": 0.5152247462542291, "url": null}, {"category": "", "frequency": 0.0016837108541208705, "site": "letemsvetemapplem.eu", "site_cat": "#000", "site_freq": 0.8206521739130435, "url": null}, {"category": "", "frequency": 0.0016518525598139475, "site": "expres.cz", "site_cat": "#000", "site_freq": 0.5990756787983824, "url": null}, {"category": "", "frequency": 0.0016454809009525632, "site": "decathlon.cz", "site_cat": "#000", "site_freq": 0.997104247104247, "url": null}, {"category": "", "frequency": 0.0016327375832297939, "site": "pilulka.cz", "site_cat": "#000", "site_freq": 0.9970817120622568, "url": null}, {"category": "", "frequency": 0.0016199942655070248, "site": "bezrealitky.cz", "site_cat": "#000", "site_freq": 0.5755517826825127, "url": null}, {"category": "", "frequency": 0.0016024722036382172, "site": "rande.cz", "site_cat": "#000", "site_freq": 0.9508506616257087, "url": null}]')</script>
+    </div>
+
+</div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>Seznam</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                    Get the data
+                </a>
+                <div class="copyright">
+                    &copy; Cliqz - All rights reserved. Last updated on 07.12.2018
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/" target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/" target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local javascript modules -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/search.js"></script>
+
+
+</footer>
+<!-- END OF FOOTER -->
